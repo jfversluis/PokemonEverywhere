@@ -1,0 +1,40 @@
+﻿@page "/pokemon"
+
+@using PokemonEverywhere.Shared.Models
+@using PokemonEverywhere.Shared.Services
+
+@attribute [StreamRendering]
+@inject PokemonLocalService pokemonLocalService
+
+<PageTitle>Pokemon</PageTitle>
+
+<h1>Pokemon</h1>
+
+@if (pokemon is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul class="card-list">
+        @foreach (var p in pokemon)
+        {
+            <li class="card-item">
+                <img class="card-image" src="@p.Image.Hires">
+                <div class="card-content">
+                    <h2>@p.Name.English</h2>
+                    <p>@p.Species</p>
+                </div>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Pokemon>? pokemon;
+
+    protected override async Task OnInitializedAsync()
+    {
+        pokemon = await pokemonLocalService.GetPokemonAsync();
+    }
+}

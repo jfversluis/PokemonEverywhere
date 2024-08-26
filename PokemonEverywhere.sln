@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEverywhere.Shared", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEverywhere.WebApi", "PokemonEverywhere.WebApi\PokemonEverywhere.WebApi.csproj", "{69F18BA0-BF33-4A88-9626-8E1EFEE89C6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEverywhere.Blazor", "PokemonEverywhere.Blazor\PokemonEverywhere.Blazor.csproj", "{24AF6DEB-4949-41E9-96EC-80177DC77C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{69F18BA0-BF33-4A88-9626-8E1EFEE89C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69F18BA0-BF33-4A88-9626-8E1EFEE89C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69F18BA0-BF33-4A88-9626-8E1EFEE89C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AF6DEB-4949-41E9-96EC-80177DC77C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AF6DEB-4949-41E9-96EC-80177DC77C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AF6DEB-4949-41E9-96EC-80177DC77C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AF6DEB-4949-41E9-96EC-80177DC77C6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
