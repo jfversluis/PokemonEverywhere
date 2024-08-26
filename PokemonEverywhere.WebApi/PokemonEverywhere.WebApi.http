@@ -1,0 +1,11 @@
+@PokemonEverywhere.WebApi_HostAddress = http://localhost:5152
+
+GET {{PokemonEverywhere.WebApi_HostAddress}}/pokemon
+Accept: application/json
+
+###
+
+GET {{PokemonEverywhere.WebApi_HostAddress}}/pokemon/25
+Accept: application/json
+
+###
