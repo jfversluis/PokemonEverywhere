@@ -3,9 +3,6 @@
 Sample code to demonstrate how code can be shared all the way from frontend to backend with C# and .NET.
 
 This project includes:
-* A backend Web API service that serves the Pokemon content
-* A shared library with the model and 2 services that can be used to retrieve data, **shared by all other projects**
-* A shared Razor
 
 | Project    | Description |
 | -------- | ------- |
