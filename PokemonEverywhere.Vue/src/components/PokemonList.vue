@@ -21,8 +21,16 @@ import { Pokemon } from '../models/Pokemon';
 export default defineComponent({
   name: 'PokemonList',
   setup() {
-    const pokemons = ref<Pokemon[]>([]);
-    const loading = ref(true);
+    let pokemons = ref<Pokemon[]>([]);
+    let loading = ref(true);
+
+    function handlePokemons(event: any) {
+      const parsedPokenmons = JSON.parse(event.detail.message);
+      pokemons.value = parsedPokenmons;
+      loading.value = false;
+    }
+
+    window.addEventListener('HybridWebViewMessageReceived', handlePokemons);
 
     return {
       pokemons,
@@ -30,6 +38,8 @@ export default defineComponent({
     };
   },
 });
+
+
 </script>
 
 <style scoped>
