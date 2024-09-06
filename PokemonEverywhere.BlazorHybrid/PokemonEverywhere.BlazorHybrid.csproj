@@ -66,6 +66,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\PokemonEverywhere.Blazor.Shared\PokemonEverywhere.Blazor.Shared.csproj" />
+      <ProjectReference Include="..\PokemonEverywhere.Shared\PokemonEverywhere.Shared.csproj" />
     </ItemGroup>
 
 </Project>

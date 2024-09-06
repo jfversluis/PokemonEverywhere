@@ -72,6 +72,12 @@ public class Image
 
     [JsonPropertyName("hires")]
     public string Hires { get; set; }
+
+    // Added for WinForms data grid
+    public override string ToString()
+    {
+        return Thumbnail;
+    }
 }
 
 public class Name
@@ -87,6 +93,11 @@ public class Name
 
     [JsonPropertyName("french")]
     public string French { get; set; }
+
+    public override string ToString()
+    {
+        return English;
+    }
 }
 
 public class Profile
