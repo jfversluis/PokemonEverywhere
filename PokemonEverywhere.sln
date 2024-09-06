@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEverywhere.BlazorHyb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEverywhere.WinForms", "PokemonEverywhere.WinForms\PokemonEverywhere.WinForms.csproj", "{490A2D7C-D158-460F-9ACC-102A8800A216}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEverywhere.Wpf", "PokemonEverywhere.Wpf\PokemonEverywhere.Wpf.csproj", "{74499BA5-8C90-4A1E-B3E0-1D5A30D1AD2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{490A2D7C-D158-460F-9ACC-102A8800A216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{490A2D7C-D158-460F-9ACC-102A8800A216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{490A2D7C-D158-460F-9ACC-102A8800A216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74499BA5-8C90-4A1E-B3E0-1D5A30D1AD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74499BA5-8C90-4A1E-B3E0-1D5A30D1AD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74499BA5-8C90-4A1E-B3E0-1D5A30D1AD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74499BA5-8C90-4A1E-B3E0-1D5A30D1AD2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

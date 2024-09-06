@@ -17,8 +17,4 @@
     <ProjectReference Include="..\PokemonEverywhere.Shared\PokemonEverywhere.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
-  </ItemGroup>
-
 </Project>
