@@ -8,28 +8,28 @@ public class Pokemon
     public int Id { get; set; }
 
     [JsonPropertyName("name")]
-    public Name Name { get; set; }
+    public Name? Name { get; set; }
 
     [JsonPropertyName("type")]
-    public List<string> Type { get; set; }
+    public List<string>? Type { get; set; }
 
     [JsonPropertyName("base")]
-    public Base Base { get; set; }
+    public Base? Base { get; set; }
 
     [JsonPropertyName("species")]
-    public string Species { get; set; }
+    public string Species { get; set; } = string.Empty;
 
     [JsonPropertyName("description")]
-    public string Description { get; set; }
+    public string Description { get; set; } = string.Empty;
 
     [JsonPropertyName("evolution")]
-    public Evolution Evolution { get; set; }
+    public Evolution? Evolution { get; set; }
 
     [JsonPropertyName("profile")]
-    public Profile Profile { get; set; }
+    public Profile? Profile { get; set; }
 
     [JsonPropertyName("image")]
-    public Image Image { get; set; }
+    public Image? Image { get; set; }
 }
 
 public class Base
@@ -56,22 +56,22 @@ public class Base
 public class Evolution
 {
     [JsonPropertyName("next")]
-    public List<List<string>> Next { get; set; }
+    public List<List<string>>? Next { get; set; }
 
     [JsonPropertyName("prev")]
-    public List<string> Prev { get; set; }
+    public List<string>? Prev { get; set; }
 }
 
 public class Image
 {
     [JsonPropertyName("sprite")]
-    public string Sprite { get; set; }
+    public string Sprite { get; set; } = string.Empty;
 
     [JsonPropertyName("thumbnail")]
-    public string Thumbnail { get; set; }
+    public string Thumbnail { get; set; } = string.Empty;
 
     [JsonPropertyName("hires")]
-    public string Hires { get; set; }
+    public string Hires { get; set; } = string.Empty;
 
     // Added for WinForms data grid
     public override string ToString()
@@ -83,16 +83,16 @@ public class Image
 public class Name
 {
     [JsonPropertyName("english")]
-    public string English { get; set; }
+    public string English { get; set; } = string.Empty;
 
     [JsonPropertyName("japanese")]
-    public string Japanese { get; set; }
+    public string Japanese { get; set; } = string.Empty;
 
     [JsonPropertyName("chinese")]
-    public string Chinese { get; set; }
+    public string Chinese { get; set; } = string.Empty;
 
     [JsonPropertyName("french")]
-    public string French { get; set; }
+    public string French { get; set; } = string.Empty;
 
     public override string ToString()
     {
@@ -103,17 +103,17 @@ public class Name
 public class Profile
 {
     [JsonPropertyName("height")]
-    public string Height { get; set; }
+    public string Height { get; set; } = string.Empty;
 
     [JsonPropertyName("weight")]
-    public string Weight { get; set; }
+    public string Weight { get; set; } = string.Empty;
 
     [JsonPropertyName("egg")]
-    public List<string> Egg { get; set; }
+    public List<string>? Egg { get; set; }
 
     [JsonPropertyName("ability")]
-    public List<List<string>> Ability { get; set; }
+    public List<List<string>>? Ability { get; set; }
 
     [JsonPropertyName("gender")]
-    public string Gender { get; set; }
+    public string Gender { get; set; } = string.Empty;
 }
