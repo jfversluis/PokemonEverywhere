@@ -4,7 +4,7 @@ using PokemonEverywhere.Shared.Services;
 var pokemonService = new PokemonLocalService(
     new HttpClient()
     {
-        BaseAddress = new Uri("https://localhost:7055/")
+        BaseAddress = new Uri(PokemonLocalService.BaseAddress)
     });
 
 var table = new ConsoleTable("ID", "Name", "Species");

@@ -9,7 +9,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<PokemonLocalService>(client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7055/");
+    client.BaseAddress = new Uri(PokemonLocalService.BaseAddress);
 });
 
 var app = builder.Build();

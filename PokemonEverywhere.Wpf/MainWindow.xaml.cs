@@ -24,7 +24,7 @@ public partial class MainWindow : Window
             sp => new PokemonLocalService(
                 new System.Net.Http.HttpClient()
                 {
-                    BaseAddress = new Uri("https://localhost:7055/")
+                    BaseAddress = new Uri(PokemonLocalService.BaseAddress)
                 }));
 
         serviceCollection.AddWpfBlazorWebView();

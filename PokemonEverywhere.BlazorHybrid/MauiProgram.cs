@@ -21,7 +21,7 @@ namespace PokemonEverywhere.BlazorHybrid
                 sp => new PokemonLocalService(
                     new HttpClient()
                     {
-                        BaseAddress = new Uri("https://localhost:7055/")
+                        BaseAddress = new Uri(PokemonLocalService.BaseAddress)
                     }));
 
 #if DEBUG

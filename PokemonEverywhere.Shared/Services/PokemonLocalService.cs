@@ -3,14 +3,12 @@ using System.Net.Http.Json;
 
 namespace PokemonEverywhere.Shared.Services;
 
-public class PokemonLocalService
+public class PokemonLocalService(HttpClient httpClient)
 {
-    private readonly HttpClient _httpClient;
+    private readonly HttpClient _httpClient = httpClient;
 
-    public PokemonLocalService(HttpClient httpClient)
-    {
-        _httpClient = httpClient;
-    }
+    public const string BaseAddress = "https://localhost:7055/";
+
     public async Task<List<Pokemon>> GetPokemonAsync()
     {
         return await _httpClient.GetFromJsonAsync<List<Pokemon>>("/pokemon") ?? [];

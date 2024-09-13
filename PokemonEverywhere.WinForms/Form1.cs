@@ -18,7 +18,7 @@ public partial class Form1 : Form
             sp => new PokemonLocalService(
                 new HttpClient()
                 {
-                    BaseAddress = new Uri("https://localhost:7055/")
+                    BaseAddress = new Uri(PokemonLocalService.BaseAddress)
                 }));
 
         serviceProvider = services.BuildServiceProvider();
