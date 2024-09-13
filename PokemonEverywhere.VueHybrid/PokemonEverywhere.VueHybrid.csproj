@@ -55,9 +55,9 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 
-		<Content Include="..\PokemonEverywhere.Vue\dist\**\*.*" Visible="False">
+		<MauiAsset Include="..\PokemonEverywhere.Vue\dist\**\*.*" Visible="False">
 			<Link>wwwroot\%(RecursiveDir)%(Filename)%(Extension)</Link>
-		</Content>
+		</MauiAsset>
 	</ItemGroup>
 
 	<ItemGroup>

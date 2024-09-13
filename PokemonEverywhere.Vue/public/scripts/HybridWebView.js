@@ -6,6 +6,7 @@ window.HybridWebView = {
         }
 
         if (window.chrome && window.chrome.webview) {
+            // Windows WebView2
             window.chrome.webview.addEventListener('message', arg => {
                 DispatchHybridWebViewMessage(arg.data);
             });
