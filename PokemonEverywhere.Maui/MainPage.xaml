@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PokemonEverywhere.Maui.ViewModels"
+             xmlns:models="clr-namespace:PokemonEverywhere.Shared.Models;assembly=PokemonEverywhere.Shared"
+             x:DataType="vm:PokemonListViewModel"
+             x:Class="PokemonEverywhere.Maui.MainPage"
+             Title="Pokemon Everywhere"
+             Padding="20">
+
+    <CollectionView ItemsSource="{Binding Pokemon}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="models:Pokemon">
+                <Grid ColumnDefinitions="80,*" RowDefinitions="*,*" ColumnSpacing="10" Padding="10">
+                    <Image Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Source="{Binding Image.Hires}" WidthRequest="75" HeightRequest="75" />
+                    <Label Grid.Column="1" Grid.Row="0" VerticalOptions="End" Text="{Binding Name.English}" FontAttributes="Bold" FontSize="25" />
+                    <Label Grid.Column="1" Grid.Row="1" VerticalOptions="Start" Text="{Binding Species}" TextColor="DimGrey" />
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</ContentPage>
